@@ -1,0 +1,41 @@
+.highlights{
+    margin-top: 1em;
+
+}
+
+.highlights__article:not(:last-of-type){
+    margin-bottom: 2em;
+}
+
+.highlights__heading, .highlights__text{
+    padding: 0 1em;
+}
+
+.highlights__image{
+    width:100%;
+    height: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .highlights{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin: auto;
+    
+        
+        
+
+    }
+
+    .highlights__article{
+        background-color: antiquewhite;
+        margin-bottom: 2em;
+        
+    }
+    
+   
+        
+    
+}

@@ -1,0 +1,37 @@
+
+.footer{
+    background-color:black;
+    color: white;
+}
+
+
+
+
+.form__field, .form__input, .inputfield__text{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 80%;
+
+}
+
+
+
+.inputField__label{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.submit{
+    width: 100%;
+}
+
+
+
+.section__footer{
+    text-align: center;
+}
+
+
+

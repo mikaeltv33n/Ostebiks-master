@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Brian's ostebiks</title>
+</head>
+
+<body>
+    <header class="siteHeader">
+        <a href="./" class="siteHeader__brand">Brians Ostebiks</a>
+        <button class="burgerMenuButton">
+            <i data-feather="menu"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="primaryNavigation" aria-hidden="true">
+            <a href="#content" class="sr-only">Spring til indholdet</a>
+            <form class="primaryNavigation__form">
+                <i class="primaryNavigation__searchIcon" data-feather="search"></i>
+                <input class="primaryNavigation__search" type="search" name="searchbar"
+                    placeholder="find din ost her...">
+            </form>
+            <menu class="primaryNavigation__menu">
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Link 1</a></li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Link 2</a></li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Link 3</a></li>
+            </menu>
+        </nav>
+    </header>
+     <section>
+        <h1>Tak</h1>
+        <p>hej <span class="thankyou__name"></span></p>
+        <p>din besked er modtaget vi kontakter dig hurtigst muligt</p>
+        <p>hav en pisse lækker dag</p>
+     </section>
+
+    <footer class="footer">
+        <form class="footer__form" action="./tak.html" novalidate>
+            <div class="form__field">
+                <label class="inputField__label" for="inputName">Navn</label>
+                <input id="inputName" class="form__input" type="text" name="navn" required placeholder="Skriv dit navn">
+                <span class="form__message"></span>
+            </div>
+            <div class="form__field">
+                <label class="inputField__label" for="inputEmail">Email</label>
+                <input id="inputEmail" class="form__input" type="email" name="email" required placeholder="Skriv din email">
+                <span class="form__message"></span>
+            </div>
+            <div class="form__field">
+                <label class="inputField__label" for="inputNumber">Nummer</label>
+                <input id="inputNumber" class="form__input" type="number" name="nummer" required placeholder="Skriv dit tlf">
+                <span class="form__message"></span>
+            </div>
+            <div class="form__field">
+                <label class="inputField__label" for="inputfield__text">Besked</label>
+                <textarea class="inputfield__text" placeholder="Smid en besked" name="message" id="" cols="10" rows="2"></textarea>
+                <span class="form__message"></span>
+            </div>
+            <input class="submit" type="submit" value="send" required>
+
+        </form>
+        <section class="section__footer ">
+            <h4>Brians ostebiks 2023.</h4>
+            <p>Copyright by Roskilde teknisk skole. Pulsen 8. 4000 Roskilde.
+            All Rights Reserved.</p>
+        </section>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <!-- <script src="./assets/scripts/contact.js" defer></script> -->
+    <script src="./assets/scripts/s-contact.js" defer></script>
+    <script src="./assets/scripts/burgermenu.js" defer></script>
+    <script src="./assets/scripts/thankyou.js" defer></script>
+</body>
+
+</html>
